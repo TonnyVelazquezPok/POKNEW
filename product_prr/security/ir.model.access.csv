@@ -3,5 +3,5 @@ access_product_issue,general user access,model_product_issues,all_users,1,1,1,1
 access_product_issue_manager,Product Issue Manager,model_product_issues,management,1,1,1,1
 access_product_welding_document,general welding_document user access,model_product_welding_specification_document,all_users,1,1,1,1
 access_product_welding_document_manager,Product welding_document Manager,model_product_welding_specification_document,management,1,1,1,1
-access_product_alloy,general alloy user access,model_product_alloy,all_users,1,1,1,1
-access_product_alloy_manager,Product alloy Manager,model_product_alloy,management,1,1,1,1
+access_product_alloy,general alloy user access,model_product_cert,all_users,1,1,1,1
+access_product_alloy_manager,Product alloy Manager,model_product_cert,management,1,1,1,1

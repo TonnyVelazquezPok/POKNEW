@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'product', 'stock'],
+    'depends': ['base', 'product', 'stock', "quality_chemical_element"],
 
     # always loaded
     'data': [
@@ -28,7 +28,6 @@
         'security/ir.model.access.csv',
         "data/report_paperformat.xml",
 
-        "views/product_alloy_view.xml",
         "views/product_view.xml",
         "views/product_menu_views.xml",
 

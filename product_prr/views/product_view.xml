@@ -16,7 +16,26 @@
                                 <field name = "drawing_number"/>
                                 <field name = "drawing_review"/>
                                 <field name = "drawing_date_revision"/>
+                                <field name = "see_production"/>
                                 <field name = "drawing_file"
+                                       widget="many2many_binary"
+                                       class="oe_inline"
+                                       options='{"size": [30, 30]}'/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page name="Product certification" string="Product certification">
+                        <field name="product_certifications"
+                               widget="one2many">
+                            <tree editable = "bottom">
+                                <field name = "name"/>
+                                <field name = "type"/>
+                                <field name = "specification"/>
+                                <field name = "sample_size"/>
+                                <field name = "scan_plan"/>
+                                <field name = "draw_area"/>
+                                <field name = "certification_type"/>
+                                <field name = "certifications_files"
                                        widget="many2many_binary"
                                        class="oe_inline"
                                        options='{"size": [30, 30]}'/>
@@ -34,11 +53,26 @@
                             </tree>
                         </field>
                     </page>
+                    <page name="Weight" string="Weights">
+                        <group position="inside">
+                            <group>
+                                <field name="gross_weight"/>
+                                <field name = "casting_weight"/>
+                                <field name = "part_weight"/>
+                            </group>
+                            <group>
+                                <field name = "pwm"/>
+                                <field name = "shipping_weight"/>
+                            </group>
+                        </group>
+                    </page>
                 </notebook>
                 <group name="group_general" position="inside">
                     <field name="mold_qty" class="oe_inline"/>
+                    <field name="mould_type"/>
                     <field name="injection_qty" class="oe_inline"/>
-                    <field name="alloy_id"/>
+                    <field name="external_specification"/>
+                    <field name="internal_specification"/>
                 </group>
             </field>
         </record>
